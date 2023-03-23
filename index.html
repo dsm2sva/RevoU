@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator with JavaScript</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <td>
+            <input type="radio" name="gender" id="laki-laki" value="laki_laki" checked> laki-laki
+            <input type="radio" name="gender" id="perempuan" value="perempuan"> Perempuan
+        </td>
+        <p>Tinggi dalam CM:
+            <input type="text" id="height"><br><span id="height_error"></span>
+        </p>
+
+        <p>Berat dalam KG:
+            <input type="text" id="weight"><br><span id="weight_error"></span>
+        </p>
+
+        <button id="btn">Hitung</button>
+        <p id="output"></p>
+    </div>
+    <div class="table">
+        <table border="1" cellpadding="4">
+            <tr>
+                <th colspan="1">nilai</th>
+                <th colspan="1">keterangan</th>
+            </tr>
+            <tr>
+                <td>kurang dari 18,5</td>
+                <td>Kekurangan berat badan</td>
+            </tr>
+            <tr>
+                <td>18,5-24,9</td>
+                <td>Normal/Ideal</td>
+            </tr>
+            <tr>
+                <td>25-29,9</td>
+                <td>Kelebihan berat badan</td>
+            </tr>
+            <tr>
+                <td>30 keatas</td>
+                <td>Obesitas</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
